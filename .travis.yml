@@ -1,9 +1,13 @@
-language: node_js
-node_js:
-  - "9"
-
-script:
-  - npm run lint:js
-  - npm run lint:html
-  - npm run lint:style
-  - bash deploy.sh
+{
+  "language": "node_js",
+  "node_js": "9",
+  "script": [
+    "npm run lint:js",
+    "npm run lint:html",
+    "npm run lint:style",
+    "bash deploy.sh"
+  ],
+  "os": "linux",
+  "group": "stable",
+  "dist": "trusty"
+}
